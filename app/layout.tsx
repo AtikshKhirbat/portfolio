@@ -1,7 +1,28 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Jersey_10,
+  VT323,
+  Space_Grotesk,
+} from "next/font/google";
 import "./globals.css";
 
+const jersey10 = Jersey_10({
+  variable: "--font-jersey10",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+const Spacegrotesk = Space_Grotesk({
+  variable: "--font-spacegrot",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+const vtFont = VT323({
+  variable: "--font-vt-font",
+  subsets: ["latin"],
+  weight: ["400"],
+});
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -25,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${jersey10.variable} ${vtFont.variable} ${Spacegrotesk} antialiased`}
       >
         {children}
       </body>

@@ -1,26 +1,34 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: oklch(0.9702 0 0);
+  --foreground: oklch(0 0 0);
+  --card: oklch(1 0 0);
+  --primary: oklch(0.5788 0.095 183.78);
+  --secondary: oklch(0.4465 0.182 323.47);
+  --design: oklch(0.4902 0.0902 234.8);
+  --destructive: oklch(0.6284 0.257276 29.184);
+  --secondarytext: oklch(0.5486 0 0);
+  --shadow-box: 4px 4px 0px 0px oklch(0 0 0 / 1);
+  --progressbg: oklch(0.9276 0.0058 264.53);
+
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-card: var(--card)l;
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-design: var(--design);
+  --color-destructive: var(--destructive);
+  --color-secondarytext: var(--secondarytext);
+  --color-progressbg: var(--progressbg);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  --font-jersey: var(--font-jersey10);
+  --font-vt: var(--font-vt-font);
+  --font-spacegrot: var(--font-spacegrot);
+  --shadow-box: var(--shadow-box);
+  
 }
