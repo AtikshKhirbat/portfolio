@@ -23,7 +23,7 @@ export default function Button({
         y: 0,
         boxShadow: "4px 4px 0px 0px rgba(0, 0, 0, 1)",
       }}
-      className={`${className} p-2.5 border-2 text-2xl font-jersey border-black bg-primary text-white justify-center flex items-center w-fit h-fit gap-2.5`}
+      className={`${className} p-2.5 border-2 text-xl md:text-2xl font-jersey border-black bg-primary text-white justify-center flex items-center w-fit h-fit gap-2.5 `}
       {...props}
     >
       {children}

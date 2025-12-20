@@ -122,7 +122,7 @@ export function RightHero() {
                 <p className="text-secondarytext text-2xl">50 / 100</p>
               </div>
 
-              <Loader percentage="50%" className="bg-[#1f688c]!" />
+              <Loader percentage="50%" className="bg-bar1!" />
             </div>
           </div>
 

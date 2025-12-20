@@ -1,13 +1,19 @@
 "use client";
 import { FaBugSlash, FaListCheck } from "react-icons/fa6";
+import { useInView } from "motion/react";
+import { motion } from "motion/react";
+import { useRef } from "react";
 import { FaCoffee } from "react-icons/fa";
 export default function AboutMe() {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
   return (
     <section
       id="about"
       className="px-5 md:px-20 py-2.5 flex-col w-full h-full justify-center"
     >
-      <div className="flex px-5 text-8xl">
+      <div className="flex px-5 text-7xl md:text-8xl">
         <h1>About&nbsp;</h1>
         <h1 className="text-primary">Me</h1>
       </div>
@@ -116,7 +122,7 @@ export function AchievmentCards() {
 export function AboutLeft() {
   return (
     <div className="px-5 py-2.5 w-full min-h-full gap-5 flex flex-col justify-start">
-      <div className="p-10 h-fit gap-4 flex flex-col relative border-2 bg-white border-black shadow-box w-full wrap-normal font-vt text-3xl">
+      <div className="px-2.5 py-3 md:px-10 md:py-10 h-fit gap-4 flex flex-col relative border-2 bg-white border-black shadow-box w-full wrap-normal font-vt text-3xl">
         <p>
           Hey! My name is Test, i am a fullstack developer with a
           bachelor&apos;s degree in Computer Science.

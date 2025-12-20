@@ -97,7 +97,7 @@ export default function ProjectSection() {
       <div className="w-full h-fit gap-10 px-5 flex flex-col">
         <div className="w-full h-fit gap-2.5 py-2.5">
           <div className="w-fit h-fit flex flex-col">
-            <p className="text-primary text-8xl">Projects</p>
+            <p className="text-primary text-7xl md:text-8xl">Projects</p>
             <div className="flex flex-col gap-2.5 w-full h-fit">
               <div className="flex w-full leading-none">
                 <p className="text-xl text-secondarytext">
@@ -311,7 +311,7 @@ export function Carousel({
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.8 }}
-        className="w-full flex flex-col items-center gap-4 sticky bottom-4"
+        className="w-full flex flex-col items-center gap-4"
       >
         <div className="flex gap-2 items-center">
           <motion.button
@@ -399,7 +399,7 @@ export function Tags({ className = "", tag, ...props }: TagsInter) {
 
 export function ProjectCard() {
   return (
-    <div className="w-full h-fit px-5 py-2.5 flex justify-between border-t-2 border-dashed border-[#D1D5DB]">
+    <div className="w-full h-fit px-5 py-2.5 grid grid-cols-3 md:grid-cols-3 content-center justify-between border-t-2 border-dashed border-[#D1D5DB]">
       <div className="flex flex-col p-5">
         <div className="flex flex-col items-center justify-center text-center">
           <IoCube className="size-5" />

@@ -4,20 +4,28 @@
   --background: oklch(0.9702 0 0);
   --foreground: oklch(0 0 0);
   --card: oklch(1 0 0);
+  --bar1: oklch(0.465 0.0809 279.26);
+  --mutedcardtext: oklch(0.4997 0 0);
+  --mutedcard: oklch(0.9276 0.0058 264.53);
+  --cardhome: oklch(0.9683 0.0069 247.9);
   --primary: oklch(0.5788 0.095 183.78);
   --secondary: oklch(0.4465 0.182 323.47);
   --design: oklch(0.4902 0.0902 234.8);
-  --destructive: oklch(0.6284 0.257276 29.184);
+  --destructive: oklch(0.6451 0.2028 24.87);
   --secondarytext: oklch(0.5486 0 0);
   --shadow-box: 4px 4px 0px 0px oklch(0 0 0 / 1);
+  --shadow-box-btn: 2px 2px 0px 0px oklch(0 0 0 / 1);
   --progressbg: oklch(0.9276 0.0058 264.53);
-
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-card: var(--card)l;
+  --color-card: var(--card);
+  --color-bar1: var(--bar1);
+  --color-mutedcardtext: var(--mutedcardtext);
+  --color-mutedcard: var(--mutedcard);
+  --color-cardhome: var(--cardhome);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-design: var(--design);
@@ -30,5 +38,6 @@
   --font-vt: var(--font-vt-font);
   --font-spacegrot: var(--font-spacegrot);
   --shadow-box: var(--shadow-box);
+  --shadow-boxbtn: var(--shadow-box-btn);
   
 }

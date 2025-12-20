@@ -17,7 +17,7 @@ export default function ContactMe() {
         <div className="gap-8 flex flex-col w-full h-fit">
           <div className="flex flex-col gap-2.5 py-2.5 h-fit w-full">
             <div className="w-fit h-fit flex flex-col">
-              <p className="text-primary text-8xl">Contact Me</p>
+              <p className="text-primary text-7xl md:text-8xl">Contact Me</p>
               <p className="font-vt text-xl">
                 Communication Hub. Send a Transmission.
               </p>
@@ -50,7 +50,7 @@ function MailSection() {
           </div>
           <p className="text-2xl">xyz@gmail.com</p>
         </div>
-        <div className="w-full h-fit flex py-2.5 gap-3.5">
+        <div className="w-full h-fit flex flex-col md:flex-row py-2.5 gap-3.5">
           <SocialButton href="">
             <FaGithub className="size-7" />
             <p className="text-2xl">Github</p>
@@ -71,7 +71,7 @@ function MailSection() {
 
 export function ContactCard() {
   return (
-    <div className="w-full h-fit px-5 py-2.5 flex justify-between border-t-2 border-dashed border-[#D1D5DB]">
+    <div className="w-full h-fit px-5 py-2.5 grid grid-cols-2 md:grid-cols-4 justify-between border-t-2 border-dashed border-[#D1D5DB]">
       <div className="flex flex-col p-5">
         <div className="flex flex-col items-center justify-center text-center">
           <BiSolidSend className="size-5" />
