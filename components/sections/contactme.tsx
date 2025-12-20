@@ -74,7 +74,7 @@ function MailSection() {
 
 export function ContactCard() {
   return (
-    <div className="w-full h-fit px-5 py-2.5 grid grid-cols-2 md:grid-cols-4 justify-between border-t-2 border-dashed border-[#D1D5DB]">
+    <div className="w-full h-fit px-5 py-2.5 grid grid-cols-2 md:grid-cols-4 justify-between border-t-2 border-dashed border-secondrytext">
       <div className="flex flex-col p-5">
         <div className="flex flex-col items-center justify-center text-center">
           <BiSolidSend className="size-5" />
