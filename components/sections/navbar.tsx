@@ -21,7 +21,7 @@ export default function NavBar() {
       <nav className="hidden md:flex fixed top-0 left-0 right-0 z-50 px-5 md:px-20 py-5 w-full h-fit flex-row justify-between items-center bg-background">
         <a href="#home" className="flex gap-0 font-jersey text-6xl">
           <h1>{"<"}</h1>
-          <h1 className="text-primary">Rigbyte</h1>
+          <h1 className="text-primary">Atiksh</h1>
           <h1>{"/>"}</h1>
         </a>
 

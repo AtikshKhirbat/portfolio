@@ -18,51 +18,10 @@ export default function ProjectSection() {
         { tag: "React", color: "" },
         { tag: "Javascript", color: "bg-[#8c811f]!" },
       ],
-      git: "",
-      host: "",
-      image: "",
-    },
-    {
-      projecttitle: "Level 2: E-Commerce Site",
-      projectdesc:
-        "A full-featured e-commerce platform with shopping cart, payment integration, and user authentication.",
-      projectname: "ShopHub",
-      tags: [
-        { tag: "Next.js", color: "" },
-        { tag: "TypeScript", color: "bg-[#2b7489]!" },
-        { tag: "Tailwind", color: "bg-[#06b6d4]!" },
-      ],
-      git: "",
-      host: "",
-      image: "",
-    },
-    {
-      projecttitle: "Level 3: Dashboard",
-      projectdesc:
-        "An analytics dashboard with real-time data visualization and interactive charts for business metrics.",
-      projectname: "DataViz Pro",
-      tags: [
-        { tag: "React", color: "" },
-        { tag: "D3.js", color: "bg-[#f9a03c]!" },
-        { tag: "Node.js", color: "bg-[#68a063]!" },
-      ],
-      git: "",
-      host: "",
-      image: "",
-    },
-    {
-      projecttitle: "Level 4: Social Media App",
-      projectdesc:
-        "A social networking platform with posts, comments, likes, and real-time notifications.",
-      projectname: "ConnectHub",
-      tags: [
-        { tag: "React", color: "" },
-        { tag: "Firebase", color: "bg-[#ffa611]!" },
-        { tag: "Material-UI", color: "bg-[#007fff]!" },
-      ],
-      git: "",
-      host: "",
-      image: "",
+      git: "https://github.com/zephiteofficial/zephyrvpn-website",
+      host: "https://zephyrvpn.com/",
+      image:
+        "https://github.com/AtikshKhirbat/portfolio/blob/e1b85b5b1f4f6b275c44cf49f27f2f514ff2f3f9/public/image.png",
     },
   ];
 
