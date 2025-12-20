@@ -44,7 +44,7 @@ function MailSection() {
         </p>
       </div>
       <div className="gap-3.5 flex flex-col w-full h-fit">
-        <div className="gap-2.5 p-2.5 w-full h-fit flex border-2 border-border shadow-box items-center">
+        <div className="gap-2.5 p-2.5 w-full h-fit flex flex-col md:flex-row border-2 border-border shadow-box items-center">
           <div className="border-2 border-border bg-primary p-2.5">
             <GrMail className="size-6 text-text" />
           </div>
