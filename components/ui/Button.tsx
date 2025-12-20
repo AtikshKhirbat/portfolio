@@ -1,5 +1,6 @@
-import { motion } from "motion/react";
-interface ButtonProps extends React.ComponentProps<"a"> {
+import { motion, HTMLMotionProps } from "motion/react";
+
+interface ButtonProps extends Omit<HTMLMotionProps<"a">, "href"> {
   href: string;
 }
 

@@ -21,7 +21,7 @@ export default function Home() {
       <div className="xl:px-20 min-fit justify-center flex flex-1 items-center">
         <ProjectSection />
       </div>
-      <div className="xl:px-20 min-fit justify-center flex flex-1 items-center">
+      <div className="xl:px-20 min-fit justify-center flex flex-1 items-center mb-20 md:mb-0">
         <ContactMe />
       </div>
     </div>

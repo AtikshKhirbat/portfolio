@@ -7,7 +7,7 @@ import Loader from "../ui/loader";
 export default function HeroSection() {
   return (
     <section
-      id="hero"
+      id="home"
       className="w-full h-full px-5 md:px-20 flex flex-col gap-2.5"
     >
       {/* Parent Container */}

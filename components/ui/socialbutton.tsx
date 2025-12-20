@@ -1,6 +1,6 @@
 "use client";
-import { motion } from "motion/react";
-interface SocialButtonProps extends React.ComponentProps<"a"> {
+import { motion, HTMLMotionProps } from "motion/react";
+interface SocialButtonProps extends Omit<HTMLMotionProps<"a">, "href"> {
   href: string;
 }
 export default function SocialButton({
