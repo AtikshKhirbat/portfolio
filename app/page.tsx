@@ -10,7 +10,7 @@ export default function Home() {
       <NavBar />
 
       {/* Hero Section - centered on screen */}
-      <div className="flex-1 flex items-center justify-center xl:px-20 min-h-screen mt-10 lg:mt-0">
+      <div className="flex-1 flex items-center justify-center xl:px-20 min-h-screen mt-10 md:mt-32 xl:mt-0">
         <HeroSection />
       </div>
 

@@ -192,7 +192,7 @@ export function ProjectDataDisplay({
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.2 }}
-        className="p-2.5 bg-secondary border-2 border-black shadow-box w-fit text-white text-2xl font-vt"
+        className="p-2.5 bg-secondary border-2 border-border shadow-box w-fit text-text text-2xl font-vt"
       >
         {projecttitle}
       </motion.p>
@@ -246,11 +246,11 @@ export function ProjectDataDisplay({
             transition={{ delay: 0.7 }}
             className="py-8 w-full gap-2.5 h-fit flex"
           >
-            <Button href={host} className="bg-black! text-white!">
+            <Button href={host} className="bg-foreground! text-text!">
               <FaFolderOpen />
               Open
             </Button>
-            <Button href={git} className="bg-white text-black!">
+            <Button href={git} className="bg-text text-foreground!">
               <FaTerminal />
               View Work
             </Button>
@@ -262,12 +262,12 @@ export function ProjectDataDisplay({
           transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
           className="w-full h-full flex order-0"
         >
-          <div className="overflow-visible w-full h-fit mx-32 aspect-video bg-[url(/image.png)] bg-cover border-2 border-black shadow-box hidden relative lg:inline">
+          <div className="overflow-visible w-full h-fit mx-32 aspect-video bg-[url(/image.png)] bg-cover border-2 border-border shadow-box hidden relative lg:inline">
             <motion.p
               initial={{ rotate: 0, scale: 0 }}
               animate={{ rotate: 6, scale: 1 }}
               transition={{ delay: 0.5, type: "spring", stiffness: 200 }}
-              className="p-1 border-2 border-black shadow-box absolute -bottom-4 -right-4 text-primary bg-white"
+              className="p-1 border-2 border-border shadow-box absolute -bottom-4 -right-4 text-primary bg-white"
             >
               {projectname}
             </motion.p>
@@ -318,16 +318,16 @@ export function Carousel({
             whileHover={{
               x: 4,
               y: 4,
-              boxShadow: "0px 0px 0px 0px rgba(0,0,0,1)",
+              boxShadow: "0px 0px 0px 0px var(--border)",
             }}
             whileTap={{ scale: 0.95 }}
             initial={{
               x: 0,
               y: 0,
-              boxShadow: "4px 4px 0px 0px rgba(0, 0, 0, 1)",
+              boxShadow: "4px 4px 0px 0px var(--border)",
             }}
             onClick={goToPrevious}
-            className="px-4 py-2 border-2 border-black bg-white transition-colors touch-none"
+            className="px-4 py-2 border-2 border-border bg-foreground transition-colors touch-none"
             aria-label="Previous project"
           >
             ←
@@ -341,16 +341,16 @@ export function Carousel({
                 whileHover={{
                   x: 4,
                   y: 4,
-                  boxShadow: "0px 0px 0px 0px rgba(0,0,0,1)",
+                  boxShadow: "0px 0px 0px 0px var(--border)",
                 }}
                 whileTap={{ scale: 0.95 }}
                 initial={{
                   x: 0,
                   y: 0,
-                  boxShadow: "4px 4px 0px 0px rgba(0, 0, 0, 1)",
+                  boxShadow: "4px 4px 0px 0px var(--border)",
                 }}
-                className={`w-10 h-10 border-2 border-black shadow-box touch-none ${
-                  currentIndex === index ? "text-white bg-primary!" : ""
+                className={`w-10 h-10 border-2 border-border shadow-box touch-none ${
+                  currentIndex === index ? "text-text bg-primary!" : ""
                 }`}
               >
                 {index + 1}
@@ -362,16 +362,16 @@ export function Carousel({
             whileHover={{
               x: 4,
               y: 4,
-              boxShadow: "0px 0px 0px 0px rgba(0,0,0,1)",
+              boxShadow: "0px 0px 0px 0px var(--border)",
             }}
             whileTap={{ scale: 0.95 }}
             initial={{
               x: 0,
               y: 0,
-              boxShadow: "4px 4px 0px 0px rgba(0, 0, 0, 1)",
+              boxShadow: "4px 4px 0px 0px var(--border)",
             }}
             onClick={goToNext}
-            className="px-4 py-2 border-2 border-black bg-white transition-colors touch-none"
+            className="px-4 py-2 border-2 border-border bg-foreground transition-colors touch-none"
             aria-label="Next project"
           >
             →
@@ -389,7 +389,7 @@ interface TagsInter extends React.ComponentProps<"div"> {
 export function Tags({ className = "", tag, ...props }: TagsInter) {
   return (
     <div
-      className={`${className} p-2.5 border-2 border-black shadow-box bg-primary text-white`}
+      className={`${className} p-2.5 border-2 border-border shadow-box bg-primary text-text`}
       {...props}
     >
       {tag}
@@ -399,7 +399,7 @@ export function Tags({ className = "", tag, ...props }: TagsInter) {
 
 export function ProjectCard() {
   return (
-    <div className="w-full h-fit px-5 py-2.5 grid grid-cols-3 md:grid-cols-3 content-center justify-between border-t-2 border-dashed border-[#D1D5DB]">
+    <div className="w-full h-fit px-5 py-2.5 grid grid-cols-3 md:grid-cols-3 content-center justify-between border-t-2 border-dashed border-secondarytext">
       <div className="flex flex-col p-5">
         <div className="flex flex-col items-center justify-center text-center">
           <IoCube className="size-5" />

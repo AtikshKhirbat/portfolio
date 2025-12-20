@@ -2,7 +2,8 @@
 
 :root {
   --background: oklch(0.9702 0 0);
-  --foreground: oklch(0 0 0);
+  --foreground: oklch(1 0 0);
+  --text: oklch(0 0 0 );
   --card: oklch(1 0 0);
   --bar1: oklch(0.465 0.0809 279.26);
   --mutedcardtext: oklch(0.4997 0 0);
@@ -16,10 +17,33 @@
   --shadow-box: 4px 4px 0px 0px oklch(0 0 0 / 1);
   --shadow-box-btn: 2px 2px 0px 0px oklch(0 0 0 / 1);
   --progressbg: oklch(0.9276 0.0058 264.53);
+  --border: oklch(0 0 0);
+  --shadow-color: rgba(255,255,255,1);
 }
+.dark {
+  --background: oklch(0.1913 0 0);
+  --foreground: oklch(0 0 0);
+  --text: oklch(1 0 0);
+  --card: oklch(0.2768 0 0);
+  --bar1: oklch(0.6621 0.1097 279.4);
+  --mutedcardtext: oklch(0.8172 0 0);
+  --mutedcard: oklch(0.1998 0.0086 264.36);
+  --cardhome: oklch(0.2124 0.0255 246.74);
+  --primary: oklch(0.835 0.1034 185.31);
+  --secondary: oklch(0.6938 0.1901 323.29);
+  --design: oklch(0.4902 0.0902 234.8);
+  --destructive: oklch(0.6451 0.2028 24.87);
+  --secondarytext: oklch(0.8172 0 0);
+  --shadow-box: 4px 4px 0px 0px oklch(1 0 0 / 1);
+  --shadow-box-btn: 2px 2px 0px 0px oklch(1 0 0 / 1);
+  --progressbg: oklch(0.4712 0 0);
+  --border: oklch(1 0 0);
+}
+
 
 @theme inline {
   --color-background: var(--background);
+  --color-text: var(--text);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-bar1: var(--bar1);
@@ -32,6 +56,7 @@
   --color-destructive: var(--destructive);
   --color-secondarytext: var(--secondarytext);
   --color-progressbg: var(--progressbg);
+  --color-border: var(--border);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-jersey: var(--font-jersey10);
@@ -39,5 +64,6 @@
   --font-spacegrot: var(--font-spacegrot);
   --shadow-box: var(--shadow-box);
   --shadow-boxbtn: var(--shadow-box-btn);
+
   
 }

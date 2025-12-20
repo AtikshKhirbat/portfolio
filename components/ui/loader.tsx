@@ -9,7 +9,7 @@ export default function Loader({
   ...props
 }: Loaderprops) {
   return (
-    <div className="w-full h-5 border-2 border-black bg-progressbg overflow-clip">
+    <div className="w-full h-5 border-2 border-border bg-progressbg overflow-clip">
       <motion.div
         initial={{
           x: -600,

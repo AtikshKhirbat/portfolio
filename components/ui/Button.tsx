@@ -15,15 +15,15 @@ export default function Button({
       whileHover={{
         x: 4,
         y: 4,
-        boxShadow: "0px 0px 0px 0px rgba(0,0,0,1)",
+        boxShadow: "0px 0px 0px 0px var(--border)",
       }}
       transition={{}}
       initial={{
         x: 0,
         y: 0,
-        boxShadow: "4px 4px 0px 0px rgba(0, 0, 0, 1)",
+        boxShadow: "4px 4px 0px 0px var(--border)",
       }}
-      className={`${className} p-2.5 border-2 text-xl md:text-2xl font-jersey border-black bg-primary text-white justify-center flex items-center w-fit h-fit gap-2.5 `}
+      className={`${className} p-2.5 border-2 text-xl md:text-2xl font-jersey border-border bg-primary text-foreground justify-center flex items-center w-fit h-fit gap-2.5 `}
       {...props}
     >
       {children}

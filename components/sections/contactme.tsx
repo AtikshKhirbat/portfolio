@@ -34,7 +34,7 @@ export default function ContactMe() {
 
 function MailSection() {
   return (
-    <div className="gap-12 p-8 flex flex-col w-full h-fit relative border-2 border-black shadow-box">
+    <div className="gap-12 p-8 flex flex-col w-full h-fit relative border-2 border-border shadow-box">
       <div className="gap-2.5 w-full h-fit flex flex-col">
         <p className="text-5xl">Let&apos; Connect!!!</p>
         <p className="font-vt text-2xl">
@@ -44,9 +44,9 @@ function MailSection() {
         </p>
       </div>
       <div className="gap-3.5 flex flex-col w-full h-fit">
-        <div className="gap-2.5 p-2.5 w-full h-fit flex border-2 border-black shadow-box items-center">
-          <div className="border-2 border-black bg-primary p-2.5">
-            <GrMail className="size-6 text-white" />
+        <div className="gap-2.5 p-2.5 w-full h-fit flex border-2 border-border shadow-box items-center">
+          <div className="border-2 border-border bg-primary p-2.5">
+            <GrMail className="size-6 text-text" />
           </div>
           <p className="text-2xl">xyz@gmail.com</p>
         </div>
