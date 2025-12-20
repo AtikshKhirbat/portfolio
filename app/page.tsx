@@ -3,6 +3,7 @@ import NavBar from "@/components/sections/navbar";
 import HeroSection from "@/components/sections/herosection";
 import AboutMe from "@/components/sections/aboutsection";
 import ProjectSection from "@/components/sections/projectsection";
+import ContactMe from "@/components/sections/contactme";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background font-jersey">
@@ -19,6 +20,9 @@ export default function Home() {
       </div>
       <div className="xl:px-20 min-h-[200vh] justify-center flex flex-1 items-center">
         <ProjectSection />
+      </div>
+      <div className="xl:px-20 min-h-[200vh] justify-center flex flex-1 items-center">
+        <ContactMe />
       </div>
     </div>
   );
