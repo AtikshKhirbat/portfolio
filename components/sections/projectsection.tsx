@@ -21,7 +21,7 @@ export default function ProjectSection() {
       git: "https://github.com/zephiteofficial/zephyrvpn-website",
       host: "https://zephyrvpn.com/",
       image:
-        "https://github.com/AtikshKhirbat/portfolio/blob/e1b85b5b1f4f6b275c44cf49f27f2f514ff2f3f9/public/image.png",
+        "https://github.com/AtikshKhirbat/portfolio/blob/e1b85b5b1f4f6b275c44cf49f27f2f514ff2f3f9/public/image.png?raw=true",
     },
   ];
 
@@ -221,12 +221,17 @@ export function ProjectDataDisplay({
           transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
           className="w-full h-full flex order-0"
         >
-          <div className="overflow-visible w-full h-fit mx-32 aspect-video bg-[url(/image.png)] bg-cover border-2 border-border shadow-box hidden relative lg:inline">
+          <div className="relative w-full h-fit mx-32 hidden lg:inline">
+            <img
+              src={image}
+              alt={projectname}
+              className="w-full h-fit aspect-video bg-cover border-2 border-border shadow-box"
+            />
             <motion.p
               initial={{ rotate: 0, scale: 0 }}
               animate={{ rotate: 6, scale: 1 }}
               transition={{ delay: 0.5, type: "spring", stiffness: 200 }}
-              className="p-1 border-2 border-border shadow-box absolute -bottom-4 -right-4 text-primary bg-white"
+              className="p-1 border-2 border-border shadow-box absolute -bottom-4 -right-4 text-primary bg-foreground"
             >
               {projectname}
             </motion.p>

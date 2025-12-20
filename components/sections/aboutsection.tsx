@@ -40,7 +40,7 @@ export function AboutRight() {
         <div className="p-2.5 gap-2.5 w-full h-fit flex flex-col">
           {/* Character Top */}
           <div className="gap-2.5 p-2.5 flex w-full h-fit">
-            <div className="size-30 shrink-0 border-2 border-border relative bg-[url(https://github.com/AtikshKhirbat/portfolio/blob/e1b85b5b1f4f6b275c44cf49f27f2f514ff2f3f9/public/png_1.jpg)] bg-cover">
+            <div className="size-30 shrink-0 border-2 border-border relative bg-[url(https://github.com/AtikshKhirbat/portfolio/blob/e1b85b5b1f4f6b275c44cf49f27f2f514ff2f3f9/public/png_1.jpg?raw=true)] bg-cover">
               <p className="absolute bottom-0 right-0 bg-primary outline-2 px-0.5 outline-border text-text">
                 LVL 21
               </p>
