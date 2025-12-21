@@ -13,6 +13,7 @@ export default function Button({
   return (
     <motion.a
       href={href}
+      target="_blank"
       whileHover={{
         x: 4,
         y: 4,

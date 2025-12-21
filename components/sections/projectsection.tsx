@@ -151,7 +151,7 @@ export function ProjectDataDisplay({
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.2 }}
-        className="p-2.5 bg-secondary border-2 border-border shadow-box w-fit text-text text-2xl font-vt"
+        className="p-2.5 bg-secondary border-2 border-border shadow-box w-fit text-foreground text-2xl font-vt"
       >
         {projecttitle}
       </motion.p>
@@ -314,7 +314,7 @@ export function Carousel({
                   boxShadow: "4px 4px 0px 0px var(--border)",
                 }}
                 className={`w-10 h-10 border-2 border-border shadow-box touch-none ${
-                  currentIndex === index ? "text-text bg-primary!" : ""
+                  currentIndex === index ? "text-foreground bg-primary!" : ""
                 }`}
               >
                 {index + 1}
@@ -353,7 +353,7 @@ interface TagsInter extends React.ComponentProps<"div"> {
 export function Tags({ className = "", tag, ...props }: TagsInter) {
   return (
     <div
-      className={`${className} p-2.5 border-2 border-border shadow-box bg-primary text-text`}
+      className={`${className} p-2.5 border-2 border-border text-xl shadow-box bg-primary text-background`}
       {...props}
     >
       {tag}
