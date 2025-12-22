@@ -205,11 +205,19 @@ export function ProjectDataDisplay({
             transition={{ delay: 0.7 }}
             className="py-8 w-full gap-2.5 h-fit flex"
           >
-            <Button href={host} className="bg-foreground! text-text!">
+            <Button
+              href={host}
+              target="_blank"
+              className="bg-foreground! text-text!"
+            >
               <FaFolderOpen />
               Open
             </Button>
-            <Button href={git} className="bg-text text-foreground!">
+            <Button
+              href={git}
+              target="_blank"
+              className="bg-text text-foreground!"
+            >
               <FaTerminal />
               View Work
             </Button>
