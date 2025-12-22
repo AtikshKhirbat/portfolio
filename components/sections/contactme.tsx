@@ -62,10 +62,10 @@ function MailSection() {
             <FaLinkedin className="size-7" />
             <p className="text-2xl">Linkedin</p>
           </SocialButton>
-          <SocialButton href="">
+          {/* <SocialButton href="">
             <FaXTwitter className="size-7" />
             <p className="text-2xl">X (Twitter)</p>
-          </SocialButton>
+          </SocialButton> */}
         </div>
       </div>
     </div>
