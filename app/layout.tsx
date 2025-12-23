@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-providor";
-import {
-  Geist,
-  Geist_Mono,
-  Jersey_10,
-  VT323,
-  Space_Grotesk,
-} from "next/font/google";
+import { Jersey_10, VT323, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
 const jersey10 = Jersey_10({
@@ -24,19 +18,11 @@ const vtFont = VT323({
   subsets: ["latin"],
   weight: ["400"],
 });
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
-  title: "Atiksh Khirbat Portfolio",
-  description: "My Personal Portfolio Page",
+  title: "Atiksh Khirbat",
+  description:
+    "Explore Atiksh's Portfolio, showcasing projects and his expertise in full-stack development in working with frameworks like React, Next.js, Node.js, tailwind CSS and more. Tune in to see a new insight into design and its implementation",
 };
 
 export default function RootLayout({
@@ -45,9 +31,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${jersey10.variable} ${vtFont.variable} ${Spacegrotesk} antialiased`}
+        className={`${jersey10.variable} ${vtFont.variable} ${Spacegrotesk} antialiased`}
       >
         <ThemeProvider
           attribute="class"
