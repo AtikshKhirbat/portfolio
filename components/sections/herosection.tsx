@@ -4,6 +4,7 @@ import { GrMail } from "react-icons/gr";
 import Button from "../ui/Button";
 import Image from "next/image";
 import Loader from "../ui/loader";
+ 
 export default function HeroSection() {
   return (
     <section

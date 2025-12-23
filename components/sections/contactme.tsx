@@ -38,9 +38,9 @@ function MailSection() {
       <div className="gap-2.5 w-full h-fit flex flex-col">
         <p className="text-5xl">Let&apos; Connect!!!</p>
         <p className="font-vt text-2xl">
-          Drop me an email at atikshkhirbat0@gmail.com or say hi on my social
-          media!!! I am always open to discussing your creative ideas and bring
-          your visions to life!!!
+          Drop me an email at hi@atiksh.dev or say hi on my social media!!! I am
+          always open to discussing your creative ideas and bring your visions
+          to life!!!
         </p>
       </div>
       <div className="gap-3.5 flex flex-col w-full h-fit">
@@ -48,7 +48,7 @@ function MailSection() {
           <div className="border-2 border-border bg-primary p-2.5">
             <GrMail className="size-6 text-text" />
           </div>
-          <p className="text-2xl">atikshkhirbat0@gmail.com</p>
+          <p className="text-2xl">hi@atiksh.dev</p>
         </div>
         <div className="w-full h-fit flex flex-col md:flex-row py-2.5 gap-3.5">
           <SocialButton href="https://github.com/AtikshKhirbat" target="_blank">
