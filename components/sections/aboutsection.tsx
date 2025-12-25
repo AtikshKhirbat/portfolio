@@ -103,8 +103,8 @@ export function AchievmentCards() {
     <div className="p-2.5 gap-2.5 flex flex-col md:flex-row w-full h-fit">
       <div className="flex flex-col justify-between w-full py-4 px-2.5 border-2 border-border text-center items-center">
         <FaListCheck className="text-primary size-5" />
-        <p className="text-2xl leading-none">2</p>
-        <p className="text-secondarytext text-xl leading-none">Projects</p>
+        <p className="text-2xl leading-none">1</p>
+        <p className="text-secondarytext text-xl leading-none">Project(s)</p>
       </div>
       <div className="flex flex-col justify-between w-full py-4 px-2.5 border-2 border-border text-center items-center">
         <FaCoffee className="text-primary size-5" />
@@ -125,7 +125,9 @@ export function AboutLeft() {
       <div className="px-2.5 py-3 md:px-10 md:py-10 h-fit gap-4 flex flex-col relative border-2 bg-card border-border shadow-box w-full wrap-normal font-vt text-3xl">
         <p>
           Hey! My name is Atiksh, i am a fullstack developer with a
-          bachelor&apos;s degree in Computer Science.
+          bachelor&apos;s degree in Computer Science with half a year of
+          experience with front end projects using React, NextJS, ExpressJS and
+          MongoDB.
         </p>
         <p>
           I work on making interactive and responsive webapps that can push your

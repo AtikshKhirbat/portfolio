@@ -50,11 +50,11 @@ export function LeftHero() {
       {/* Left Card End */}
       {/* Left Buttons */}
       <div className="py-2.5 flex w-full h-fit gap-8">
-        <Button href="#projects">
+        <Button href="#projects" target="">
           <FaTerminal />
           View Projects
         </Button>
-        <Button href="#contact" className="bg-foreground! !text-text">
+        <Button href="#contact" className="bg-foreground! !text-text" target="">
           <GrMail />
           Contact Me
         </Button>
