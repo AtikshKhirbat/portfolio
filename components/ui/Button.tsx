@@ -1,5 +1,6 @@
-import { motion } from "motion/react";
-interface ButtonProps extends React.ComponentProps<"a"> {
+import { motion, HTMLMotionProps } from "motion/react";
+
+interface ButtonProps extends Omit<HTMLMotionProps<"a">, "href"> {
   href: string;
 }
 
@@ -12,6 +13,7 @@ export default function Button({
   return (
     <motion.a
       href={href}
+      target="_blank"
       whileHover={{
         x: 4,
         y: 4,

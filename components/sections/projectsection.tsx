@@ -18,51 +18,10 @@ export default function ProjectSection() {
         { tag: "React", color: "" },
         { tag: "Javascript", color: "bg-[#8c811f]!" },
       ],
-      git: "",
-      host: "",
-      image: "",
-    },
-    {
-      projecttitle: "Level 2: E-Commerce Site",
-      projectdesc:
-        "A full-featured e-commerce platform with shopping cart, payment integration, and user authentication.",
-      projectname: "ShopHub",
-      tags: [
-        { tag: "Next.js", color: "" },
-        { tag: "TypeScript", color: "bg-[#2b7489]!" },
-        { tag: "Tailwind", color: "bg-[#06b6d4]!" },
-      ],
-      git: "",
-      host: "",
-      image: "",
-    },
-    {
-      projecttitle: "Level 3: Dashboard",
-      projectdesc:
-        "An analytics dashboard with real-time data visualization and interactive charts for business metrics.",
-      projectname: "DataViz Pro",
-      tags: [
-        { tag: "React", color: "" },
-        { tag: "D3.js", color: "bg-[#f9a03c]!" },
-        { tag: "Node.js", color: "bg-[#68a063]!" },
-      ],
-      git: "",
-      host: "",
-      image: "",
-    },
-    {
-      projecttitle: "Level 4: Social Media App",
-      projectdesc:
-        "A social networking platform with posts, comments, likes, and real-time notifications.",
-      projectname: "ConnectHub",
-      tags: [
-        { tag: "React", color: "" },
-        { tag: "Firebase", color: "bg-[#ffa611]!" },
-        { tag: "Material-UI", color: "bg-[#007fff]!" },
-      ],
-      git: "",
-      host: "",
-      image: "",
+      git: "https://github.com/zephiteofficial/zephyrvpn-website",
+      host: "https://zephyrvpn.com/",
+      image:
+        "https://github.com/AtikshKhirbat/portfolio/blob/e1b85b5b1f4f6b275c44cf49f27f2f514ff2f3f9/public/image.png?raw=true",
     },
   ];
 
@@ -192,7 +151,7 @@ export function ProjectDataDisplay({
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.2 }}
-        className="p-2.5 bg-secondary border-2 border-border shadow-box w-fit text-text text-2xl font-vt"
+        className="p-2.5 bg-secondary border-2 border-border shadow-box w-fit text-foreground text-2xl font-vt"
       >
         {projecttitle}
       </motion.p>
@@ -246,11 +205,19 @@ export function ProjectDataDisplay({
             transition={{ delay: 0.7 }}
             className="py-8 w-full gap-2.5 h-fit flex"
           >
-            <Button href={host} className="bg-foreground! text-text!">
+            <Button
+              href={host}
+              target="_blank"
+              className="bg-foreground! text-text!"
+            >
               <FaFolderOpen />
               Open
             </Button>
-            <Button href={git} className="bg-text text-foreground!">
+            <Button
+              href={git}
+              target="_blank"
+              className="bg-text text-foreground!"
+            >
               <FaTerminal />
               View Work
             </Button>
@@ -262,12 +229,18 @@ export function ProjectDataDisplay({
           transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
           className="w-full h-full flex order-0"
         >
-          <div className="overflow-visible w-full h-fit mx-32 aspect-video bg-[url(/image.png)] bg-cover border-2 border-border shadow-box hidden relative lg:inline">
+          <div className="relative w-full h-full mx-32 hidden lg:inline">
+            <img
+              src={image}
+              alt={projectname}
+              className="w-full h-fit bg-cover border-2 border-border shadow-box"
+            />
+
             <motion.p
               initial={{ rotate: 0, scale: 0 }}
               animate={{ rotate: 6, scale: 1 }}
               transition={{ delay: 0.5, type: "spring", stiffness: 200 }}
-              className="p-1 border-2 border-border shadow-box absolute -bottom-4 -right-4 text-primary bg-white"
+              className="p-1 border-2 border-border shadow-box absolute -bottom-4 -right-4 text-primary bg-foreground"
             >
               {projectname}
             </motion.p>
@@ -350,7 +323,7 @@ export function Carousel({
                   boxShadow: "4px 4px 0px 0px var(--border)",
                 }}
                 className={`w-10 h-10 border-2 border-border shadow-box touch-none ${
-                  currentIndex === index ? "text-text bg-primary!" : ""
+                  currentIndex === index ? "text-foreground bg-primary!" : ""
                 }`}
               >
                 {index + 1}
@@ -389,7 +362,7 @@ interface TagsInter extends React.ComponentProps<"div"> {
 export function Tags({ className = "", tag, ...props }: TagsInter) {
   return (
     <div
-      className={`${className} p-2.5 border-2 border-border shadow-box bg-primary text-text`}
+      className={`${className} p-2.5 border-2 border-border text-xl shadow-box bg-primary text-background`}
       {...props}
     >
       {tag}

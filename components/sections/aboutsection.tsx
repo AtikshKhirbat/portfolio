@@ -1,8 +1,9 @@
 "use client";
 import { FaBugSlash, FaListCheck } from "react-icons/fa6";
 import { useInView } from "motion/react";
-import { motion } from "motion/react";
+
 import { useRef } from "react";
+import InvSection from "../ui/inventory";
 import { FaCoffee } from "react-icons/fa";
 import InventoryComp from "../ui/inventory";
 export default function AboutMe() {
@@ -41,14 +42,14 @@ export function AboutRight() {
         <div className="p-2.5 gap-2.5 w-full h-fit flex flex-col">
           {/* Character Top */}
           <div className="gap-2.5 p-2.5 flex w-full h-fit">
-            <div className="size-30 shrink-0 border-2 border-border relative bg-[url(/png_1.jpg)] bg-cover">
+            <div className="size-30 shrink-0 border-2 border-border relative bg-[url(https://github.com/AtikshKhirbat/portfolio/blob/e1b85b5b1f4f6b275c44cf49f27f2f514ff2f3f9/public/png_1.jpg?raw=true)] bg-cover">
               <p className="absolute bottom-0 right-0 bg-primary outline-2 px-0.5 outline-border text-text">
                 LVL 21
               </p>
             </div>
             <div className="w-full h-full justify-between flex flex-col">
               <div className="w-fit h-fit flex flex-col">
-                <p className="font-jersey text-2xl leading-3 h-fit">Rigbyte</p>
+                <p className="font-jersey text-2xl leading-3 h-fit">Atiksh</p>
                 <p className="text-xl text-secondarytext">
                   (Fullstack Developer)
                 </p>
@@ -109,8 +110,8 @@ export function AchievmentCards() {
     <div className="p-2.5 gap-2.5 flex flex-col md:flex-row w-full h-fit">
       <div className="flex flex-col justify-between w-full py-4 px-2.5 border-2 border-border text-center items-center">
         <FaListCheck className="text-primary size-5" />
-        <p className="text-2xl leading-none">2</p>
-        <p className="text-secondarytext text-xl leading-none">Projects</p>
+        <p className="text-2xl leading-none">1</p>
+        <p className="text-secondarytext text-xl leading-none">Project(s)</p>
       </div>
       <div className="flex flex-col justify-between w-full py-4 px-2.5 border-2 border-border text-center items-center">
         <FaCoffee className="text-primary size-5" />
@@ -130,8 +131,10 @@ export function AboutLeft() {
     <div className="px-5 py-2.5 w-full min-h-full gap-5 flex flex-col justify-start">
       <div className="px-2.5 py-3 md:px-10 md:py-10 h-fit gap-4 flex flex-col relative border-2 bg-card border-border shadow-box w-full wrap-normal font-vt text-3xl">
         <p>
-          Hey! My name is Test, i am a fullstack developer with a
-          bachelor&apos;s degree in Computer Science.
+          Hey! My name is Atiksh, i am a fullstack developer with a
+          bachelor&apos;s degree in Computer Science with half a year of
+          experience with front end projects using React, NextJS, ExpressJS and
+          MongoDB.
         </p>
         <p>
           I work on making interactive and responsive webapps that can push your

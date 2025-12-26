@@ -9,19 +9,17 @@ export default function Home() {
     <div className="flex flex-col md:gap-y-48 min-h-screen bg-background font-jersey">
       <NavBar />
 
-      {/* Hero Section - centered on screen */}
       <div className="flex-1 flex items-center justify-center xl:px-20 min-h-screen mt-10 md:mt-32 xl:mt-0">
         <HeroSection />
       </div>
 
-      {/* About Section */}
       <div className="xl:px-20 h-fit justify-center flex flex-1 items-center overflow-clip">
         <AboutMe />
       </div>
       <div className="xl:px-20 min-fit justify-center flex flex-1 items-center">
         <ProjectSection />
       </div>
-      <div className="xl:px-20 min-fit justify-center flex flex-1 items-center">
+      <div className="xl:px-20 min-fit justify-center flex flex-1 items-center mb-20 md:mb-0">
         <ContactMe />
       </div>
     </div>

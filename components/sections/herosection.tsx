@@ -4,10 +4,11 @@ import { GrMail } from "react-icons/gr";
 import Button from "../ui/Button";
 import Image from "next/image";
 import Loader from "../ui/loader";
+ 
 export default function HeroSection() {
   return (
     <section
-      id="hero"
+      id="home"
       className="w-full h-full px-5 md:px-20 flex flex-col gap-2.5"
     >
       {/* Parent Container */}
@@ -33,7 +34,7 @@ export function LeftHero() {
           <p>msg db</p>
           <p>Hello World! . . . </p>
           <div className="flex">
-            <p>I am</p> <p className="text-primary">&nbsp;Rigbyte</p>
+            <p>I am</p> <p className="text-primary">&nbsp;Atiksh</p>
           </div>
           <p className="bg-text w-fit text-foreground px-1">FullStack Dev</p>
         </div>
@@ -49,11 +50,11 @@ export function LeftHero() {
       {/* Left Card End */}
       {/* Left Buttons */}
       <div className="py-2.5 flex w-full h-fit gap-8">
-        <Button href="#projects">
+        <Button href="#projects" target="">
           <FaTerminal />
           View Projects
         </Button>
-        <Button href="#contact" className="bg-foreground! !text-text">
+        <Button href="#contact" className="bg-foreground! !text-text" target="">
           <GrMail />
           Contact Me
         </Button>
@@ -76,11 +77,11 @@ export function RightHero() {
         </div>
         <div className="w-full h-fit p-2.5 gap-2.5 flex flex-col">
           <div className="p-2.5 gap-2.5 w-full h-full flex">
-            <div className="border-2 border-border size-30 bg-[url(/png_1.jpg)] bg-cover"></div>
+            <div className="border-2 border-border size-30 bg-[url(https://github.com/AtikshKhirbat/portfolio/blob/e1b85b5b1f4f6b275c44cf49f27f2f514ff2f3f9/public/png_1.jpg?raw=true)] bg-cover"></div>
             <div className="flex flex-col w-fit min-h-full justify-between">
               <div className="w-full h-fit flex flex-col">
                 <div className="w-full h-full">
-                  <p className="text-4xl leading-none h-fit">RIGBYTE</p>
+                  <p className="text-4xl leading-none h-fit">Atiksh</p>
                   <p className="text-secondarytext text-2xl leading-none h-fit">
                     Class: Web Wizard
                   </p>
@@ -101,28 +102,28 @@ export function RightHero() {
             <div className="w-full h-fit flex-col py-2.5">
               <div className="w-full h-fit justify-between flex">
                 <p className="text-2xl">Frontend</p>
-                <p className="text-secondarytext text-2xl">80 / 100</p>
+                <p className="text-secondarytext text-2xl">6 / 12 Months</p>
               </div>
-              <Loader percentage={`80%`} />
+              <Loader percentage={`50%`} />
             </div>
           </div>
           <div className="gap-2.5 flex flex-col px-2.5 py-2 w-full h-fit">
             <div className="w-full h-fit flex-col py-2.5">
               <div className="w-full h-fit justify-between flex">
                 <p className="text-2xl">Backend</p>
-                <p className="text-secondarytext text-2xl">60 / 100</p>
+                <p className="text-secondarytext text-2xl">4 / 12 Months</p>
               </div>
-              <Loader percentage="60%" className="bg-secondary!" />
+              <Loader percentage="33%" className="bg-secondary!" />
             </div>
           </div>
           <div className="gap-2.5 flex flex-col px-2.5 py-2 w-full h-fit">
             <div className="w-full h-fit flex-col py-2.5">
               <div className="w-full h-fit justify-between flex">
                 <p className="text-2xl">Design</p>
-                <p className="text-secondarytext text-2xl">50 / 100</p>
+                <p className="text-secondarytext text-2xl">2 / 12 Months</p>
               </div>
 
-              <Loader percentage="50%" className="bg-bar1!" />
+              <Loader percentage="16%" className="bg-bar1!" />
             </div>
           </div>
 
