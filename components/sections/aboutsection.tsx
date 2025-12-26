@@ -5,6 +5,7 @@ import { useInView } from "motion/react";
 import { useRef } from "react";
 import InvSection from "../ui/inventory";
 import { FaCoffee } from "react-icons/fa";
+import InventoryComp from "../ui/inventory";
 export default function AboutMe() {
   const ref = useRef(null);
   const isInView = useInView(ref);
@@ -80,11 +81,26 @@ export function Inventory() {
       <p className="text-2xl text-secondarytext">Inventory</p>
 
       <div className="lg:grid-cols-2 xl:grid-cols-5 grid gap-2 w-full h-fit text-2xl leading-none">
-        <InvSection tip="Javascript: 6 months ">JS</InvSection>
-        <InvSection tip="React: 6 months ">React</InvSection>
-        <InvSection tip="Tailwind CSS: 6 months ">Tailwind CSS</InvSection>
-        <InvSection tip="Next.JS: 6 months ">Next.JS</InvSection>
-        <InvSection tip="Python: 1 year">Python</InvSection>
+        <InventoryComp tip="Javascript: 6 months">JS</InventoryComp>
+        <InventoryComp tip="React: 6 months">React</InventoryComp>
+        <InventoryComp tip="Tailwind CSS: 6 months">Tailwind CSS</InventoryComp>
+        <InventoryComp tip="Next.JS: 6 months">Next.JS</InventoryComp>
+        <InventoryComp tip="Python: 2 years">Python</InventoryComp>
+        {/* <p className="p-5 flex items-center text-center justify-center bg-mutedcard border-2 border-border">
+          JS
+        </p>
+        <p className="p-5 flex items-center text-center justify-center bg-mutedcard  border-2 border-border">
+          React
+        </p>
+        <p className="p-5 flex items-center text-center justify-center bg-mutedcard  border-2 border-border">
+          Tailwind CSS
+        </p>
+        <p className="p-5 flex items-center text-center justify-center bg-mutedcard  border-2 border-border">
+          Next.JS
+        </p>
+        <p className="p-5 flex items-center text-center justify-center bg-mutedcard  border-2 border-border">
+          Python
+        </p> */}
       </div>
     </div>
   );

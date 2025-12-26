@@ -102,28 +102,28 @@ export function RightHero() {
             <div className="w-full h-fit flex-col py-2.5">
               <div className="w-full h-fit justify-between flex">
                 <p className="text-2xl">Frontend</p>
-                <p className="text-secondarytext text-2xl">80 / 100</p>
+                <p className="text-secondarytext text-2xl">6 / 12 Months</p>
               </div>
-              <Loader percentage={`80%`} />
+              <Loader percentage={`50%`} />
             </div>
           </div>
           <div className="gap-2.5 flex flex-col px-2.5 py-2 w-full h-fit">
             <div className="w-full h-fit flex-col py-2.5">
               <div className="w-full h-fit justify-between flex">
                 <p className="text-2xl">Backend</p>
-                <p className="text-secondarytext text-2xl">60 / 100</p>
+                <p className="text-secondarytext text-2xl">4 / 12 Months</p>
               </div>
-              <Loader percentage="60%" className="bg-secondary!" />
+              <Loader percentage="33%" className="bg-secondary!" />
             </div>
           </div>
           <div className="gap-2.5 flex flex-col px-2.5 py-2 w-full h-fit">
             <div className="w-full h-fit flex-col py-2.5">
               <div className="w-full h-fit justify-between flex">
                 <p className="text-2xl">Design</p>
-                <p className="text-secondarytext text-2xl">50 / 100</p>
+                <p className="text-secondarytext text-2xl">2 / 12 Months</p>
               </div>
 
-              <Loader percentage="50%" className="bg-bar1!" />
+              <Loader percentage="16%" className="bg-bar1!" />
             </div>
           </div>
 

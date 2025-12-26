@@ -229,12 +229,13 @@ export function ProjectDataDisplay({
           transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
           className="w-full h-full flex order-0"
         >
-          <div className="relative w-full h-fit mx-32 hidden lg:inline">
+          <div className="relative w-full h-full mx-32 hidden lg:inline">
             <img
               src={image}
               alt={projectname}
-              className="w-full h-fit aspect-video bg-cover border-2 border-border shadow-box"
+              className="w-full h-fit bg-cover border-2 border-border shadow-box"
             />
+
             <motion.p
               initial={{ rotate: 0, scale: 0 }}
               animate={{ rotate: 6, scale: 1 }}
