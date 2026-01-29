@@ -42,11 +42,19 @@ export function AboutRight() {
         <div className="p-2.5 gap-2.5 w-full h-fit flex flex-col">
           {/* Character Top */}
           <div className="gap-2.5 p-2.5 flex w-full h-fit">
-            <div className="size-30 shrink-0 border-2 border-border relative bg-[url(https://github.com/AtikshKhirbat/portfolio/blob/e1b85b5b1f4f6b275c44cf49f27f2f514ff2f3f9/public/png_1.jpg?raw=true)] bg-cover">
+            {/* <div className="size-30 shrink-0 border-2 border-border relative bg-[url(https://github.com/AtikshKhirbat/portfolio/blob/e1b85b5b1f4f6b275c44cf49f27f2f514ff2f3f9/public/png_1.jpg?raw=true)] bg-cover"> */}
+            <div className="relative size-30 border-2 border-border shrink-0">
+              <img
+                src="/png_1.jpg"
+                alt="profile"
+                className="w-full h-full object-cover rounded"
+              />
               <p className="absolute bottom-0 right-0 bg-primary outline-2 px-0.5 outline-border text-text">
                 LVL 21
               </p>
             </div>
+
+            {/* </div> */}
             <div className="w-full h-full justify-between flex flex-col">
               <div className="w-fit h-fit flex flex-col">
                 <p className="font-jersey text-2xl leading-3 h-fit">Atiksh</p>

@@ -4,7 +4,7 @@ import SocialButton from "../ui/socialbutton";
 import { GrMail } from "react-icons/gr";
 import Loader2 from "../ui/loader2";
 import { FaCoffee, FaGithub, FaLinkedin } from "react-icons/fa";
-import { FaLocationDot, FaXTwitter } from "react-icons/fa6";
+import { FaLocationDot, FaXTwitter, FaFileLines } from "react-icons/fa6";
 import { BiSolidSend } from "react-icons/bi";
 import { BsBriefcase, BsBriefcaseFill } from "react-icons/bs";
 export default function ContactMe() {
@@ -45,7 +45,7 @@ function MailSection() {
       </div>
       <div className="gap-3.5 flex flex-col w-full h-fit">
         <div className="gap-2.5 p-2.5 w-full h-fit flex flex-col md:flex-row border-2 border-border shadow-box items-center">
-          <div className="border-2 border-border bg-primary p-2.5">
+          <div className="border-2 border-border bg-background p-2.5">
             <GrMail className="size-6 text-text" />
           </div>
           <p className="text-2xl">hi@atiksh.dev</p>
@@ -61,6 +61,10 @@ function MailSection() {
           >
             <FaLinkedin className="size-7" />
             <p className="text-2xl">Linkedin</p>
+          </SocialButton>
+          <SocialButton href="/AtikshResume.pdf" target="_blank">
+            <FaFileLines className="size-7" />
+            <p className="text-2xl">Resume</p>
           </SocialButton>
           {/* <SocialButton href="">
             <FaXTwitter className="size-7" />
