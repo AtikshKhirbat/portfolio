@@ -73,7 +73,7 @@ export function RightHero() {
             <div className="rounded-full bg-[#1f8c31] size-2.5"></div>
             <p className="text-2xl font-jersey text-foreground">Player_01</p>
           </div>
-          <p className="text-2xl font-jersey text-foreground">LVL 21</p>
+          <p className="text-2xl font-jersey text-foreground">LVL 22</p>
         </div>
         <div className="w-full h-fit p-2.5 gap-2.5 flex flex-col">
           <div className="p-2.5 gap-2.5 w-full h-full flex">
@@ -107,28 +107,28 @@ export function RightHero() {
             <div className="w-full h-fit flex-col py-2.5">
               <div className="w-full h-fit justify-between flex">
                 <p className="text-2xl">Frontend</p>
-                <p className="text-secondarytext text-2xl">6 / 12 Months</p>
+                <p className="text-secondarytext text-2xl">8 / 12 Months</p>
               </div>
-              <Loader percentage={`50%`} />
+              <Loader percentage={`66%`} />
             </div>
           </div>
           <div className="gap-2.5 flex flex-col px-2.5 py-2 w-full h-fit">
             <div className="w-full h-fit flex-col py-2.5">
               <div className="w-full h-fit justify-between flex">
                 <p className="text-2xl">Backend</p>
-                <p className="text-secondarytext text-2xl">4 / 12 Months</p>
+                <p className="text-secondarytext text-2xl">6 / 12 Months</p>
               </div>
-              <Loader percentage="33%" className="bg-secondary!" />
+              <Loader percentage="50%" className="bg-secondary!" />
             </div>
           </div>
           <div className="gap-2.5 flex flex-col px-2.5 py-2 w-full h-fit">
             <div className="w-full h-fit flex-col py-2.5">
               <div className="w-full h-fit justify-between flex">
                 <p className="text-2xl">Design</p>
-                <p className="text-secondarytext text-2xl">2 / 12 Months</p>
+                <p className="text-secondarytext text-2xl">4 / 12 Months</p>
               </div>
 
-              <Loader percentage="16%" className="bg-bar1!" />
+              <Loader percentage="33%" className="bg-bar1!" />
             </div>
           </div>
 
