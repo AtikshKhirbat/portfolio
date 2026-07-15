@@ -50,7 +50,7 @@ export function AboutRight() {
                 className="w-full h-full object-cover rounded"
               />
               <p className="absolute bottom-0 right-0 bg-primary outline-2 px-0.5 outline-border text-text">
-                LVL 21
+                LVL 22
               </p>
             </div>
 
@@ -118,7 +118,7 @@ export function AchievmentCards() {
     <div className="p-2.5 gap-2.5 flex flex-col md:flex-row w-full h-fit">
       <div className="flex flex-col justify-between w-full py-4 px-2.5 border-2 border-border text-center items-center">
         <FaListCheck className="text-primary size-5" />
-        <p className="text-2xl leading-none">1</p>
+        <p className="text-2xl leading-none">2</p>
         <p className="text-secondarytext text-xl leading-none">Project(s)</p>
       </div>
       <div className="flex flex-col justify-between w-full py-4 px-2.5 border-2 border-border text-center items-center">
